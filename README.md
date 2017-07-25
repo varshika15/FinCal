@@ -1,0 +1,2 @@
+# FinCal
+Financial calculator
