@@ -1,4 +1,4 @@
-# FinCal
+# Time Value of Money Calculator
 Time Value of Money Calculator facilitates calculating the time value of money with present value and future value. Helps to know that how changing the number of periods, interest rate, and compounding frequency affect time value of money including annuities, cash flow and investments.
 
 HOW TO USE :
