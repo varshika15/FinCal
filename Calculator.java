@@ -1,6 +1,14 @@
 package Calculators;
 
 import java.awt.EventQueue;
+import java.awt.Font;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.Color;
 
 public class Calculator {
 
@@ -422,11 +430,10 @@ public class Calculator {
 		btnBgn.setBounds(307, 112, 82, 35);
 		frmBasicCalculator.getContentPane().add(btnBgn);
 		
-		JButton btnNcr = new JButton("Ln");
+		JButton btnNcr = new JButton("nCr");
 		btnNcr.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				double ans = Math.log(Double.parseDouble(textField.getText())) ;
-				textField.setText(Double.toString(ans));
+				
 			}
 		});
 		btnNcr.setBackground(new Color(152, 251, 152));
@@ -434,13 +441,7 @@ public class Calculator {
 		btnNcr.setBounds(109, 283, 89, 35);
 		frmBasicCalculator.getContentPane().add(btnNcr);
 		
-		JButton btnNpr = new JButton("e^x");
-		btnNpr.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				double ans1 = Math.exp(Double.parseDouble(textField.getText()));
-				textField.setText(Double.toString(ans1));
-			}
-		});
+		JButton btnNpr = new JButton("nPr");
 		btnNpr.setBackground(new Color(152, 251, 152));
 		btnNpr.setFont(new Font("SansSerif", Font.PLAIN, 18));
 		btnNpr.setBounds(10, 283, 89, 35);
